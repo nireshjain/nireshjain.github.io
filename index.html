@@ -35,48 +35,49 @@
               });
       }
     }   
-var k = (beta-30)/12;
+/*var k = (beta-30)/12;
 k.onchange=function(){
+	document.write(k);
 	if (Math.floor(k) == 1){
-	$('.dynamic').attr("src","images/001.png");
+	$('#dynamic').attr("src","images/001.png");
 }
 else if (Math.floor(k) == 2){
-	$('.dynamic').attr("src","images/002.png");
+	$('#dynamic').attr("src","images/002.png");
 }
 else if (Math.floor(k) == 3){
-	$('.dynamic').attr("src","images/003.png");
+	$('#dynamic').attr("src","images/003.png");
 }
 else if (Math.floor(k) == 4){
-	$('.dynamic').attr("src","images/004.png");
+	$('#dynamic').attr("src","images/004.png");
 }
 else if (Math.floor(k) == 5){
-	$('.dynamic').attr("src","images/005.png");
+	$('#dynamic').attr("src","images/005.png");
 }
 else if (Math.floor(k) == 6){
-	$('.dynamic').attr("src","images/006.png");
+	$('#dynamic').attr("src","images/006.png");
 }
 else if (Math.floor(k) == 7){
-	$('.dynamic').attr("src","images/007.png");
+	$('#dynamic').attr("src","images/007.png");
 }
 else if (Math.floor(k) == 8){
-	$('.dynamic').attr("src","images/008.png");
+	$('#dynamic').attr("src","images/008.png");
 }
 else if (Math.floor(k) == 9){
-	$('.dynamic').attr("src","images/009.png");
+	$('#dynamic').attr("src","images/009.png");
 }
 else if (Math.floor(k) == 10){
-	$('.dynamic').attr("src","images/010.png");
+	$('#dynamic').attr("src","images/010.png");
 }
 else if (Math.floor(k) == 11){
-	$('.dynamic').attr("src","images/011.png");
+	$('#dynamic').attr("src","images/011.png");
 }
 else if (Math.floor(k) == 12){
-	$('.dynamic').attr("src","images/012.png");
+	$('#dynamic').attr("src","images/012.png");
 }
 else{
-	$('.dynamic').attr("src","images/001.png");
-}
-};
+	$('#dynamic').attr("src","images/001.png");
+}*
+};*/
     </script>
 
   </head>
@@ -88,7 +89,10 @@ else{
       No device motion data
     </div>
 <div id="imageholder">
-	<img class="dynamic col-xs-2" src="images/010.png" alt="img"/>
+	<script>
+	var k = Math.floor((beta-30)/12);
+	document.write("<img class='col-xs-2' src='images/00"+k+".png'/>");
+	</script>
 </div>
   </body>
 </html>  
