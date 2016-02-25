@@ -36,7 +36,7 @@
       }
     }   
 var k = (event.beta-30)/12;
-$(document).ready(function(){
+k.onchange=function(){
 	if (Math.floor(k) == 1){
 	$('.dynamic').attr("src","images/001.png");
 }
@@ -77,7 +77,6 @@ else{
 	$('.dynamic').attr("src","images/001.png");
 }
 });
-
     </script>
 
   </head>
