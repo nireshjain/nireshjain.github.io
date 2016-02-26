@@ -35,8 +35,8 @@
               });
       }
     }   
-/*var k = (beta-30)/12;
-k.onchange=function(){
+var k = Math.floor((beta-30)/12);
+/*k.onchange=function(){
 	document.write(k);
 	if (Math.floor(k) == 1){
 	$('#dynamic').attr("src","images/001.png");
@@ -88,10 +88,9 @@ else{
     <div id="dataContainerMotion">
       No device motion data
     </div>
-<div id="imageholder">
+<div>
 	<script>
-	var k = Math.floor((beta-30)/12);
-	document.write("<img class='col-xs-2' src='images/00"+k+".png'/>");
+	document.write("<img class='col-xs-2' " + "src='images/00"+k+".png'/>");
 	</script>
 </div>
   </body>
