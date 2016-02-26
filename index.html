@@ -3,6 +3,10 @@
   <head>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script>
+	alpha = 0.0;
+	beta = 0.0;
+	gamma = 0.0;
+	k = 0.0;
     function init() {
       //Find our div containers in the DOM
       var dataContainerOrientation = document.getElementById('dataContainerOrientation');
@@ -11,9 +15,9 @@
       //Check for support for DeviceOrientation event
       if(window.DeviceOrientationEvent) {
         window.addEventListener('deviceorientation', function(event) {
-                var alpha = event.alpha;
-                var beta = event.beta;
-                var gamma = event.gamma;
+                alpha = event.alpha;
+                beta = event.beta;
+                gamma = event.gamma;
                
                 if(alpha!=null || beta!=null || gamma!=null) 
                   dataContainerOrientation.innerHTML = 'alpha: ' + alpha + '<br/>beta: ' + beta + '<br />gamma: ' + gamma;
