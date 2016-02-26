@@ -3,7 +3,7 @@
   <head>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script>
-    function init() {
+	function init() {
       //Find our div containers in the DOM
       var dataContainerOrientation = document.getElementById('dataContainerOrientation');
       var dataContainerMotion = document.getElementById('dataContainerMotion');
@@ -35,9 +35,10 @@
               });
       }
     }   
-var k = Math.floor((beta-30)/12);
+
+k = Math.floor((beta-30)/5);
+
 /*k.onchange=function(){
-	document.write(k);
 	if (Math.floor(k) == 1){
 	$('#dynamic').attr("src","images/001.png");
 }
@@ -90,6 +91,6 @@ else{
     </div>
 	<div>
 		<img class="col-xs-2" src="images/00"+String(k)+".png"/>
-    </div>
+	</div>
 </body>
 </html>  
